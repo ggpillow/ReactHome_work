@@ -1,0 +1,71 @@
+.header {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #0b0b1a, #1a1a3e, #0d1b2a);
+    padding: 18px 40px;
+    gap: 25px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid rgba(138, 43, 226, 0.2);
+}
+
+.logo {
+    font-size: 22px;
+    background: linear-gradient(135deg, #00d2ff, #7b2ff7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    margin-right: 40px;
+    letter-spacing: 1px;
+}
+
+.link {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.link:hover {
+    color: #ffffff;
+    background: rgba(123, 47, 247, 0.15);
+    box-shadow: 0 0 15px rgba(123, 47, 247, 0.1);
+}
+
+.active {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-weight: 600;
+    background: linear-gradient(135deg, #7b2ff7, #00d2ff);
+    box-shadow: 0 4px 15px rgba(123, 47, 247, 0.4);
+}
+
+.pending {
+    color: #888888;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 12px;
+    opacity: 0.6;
+}
+
+.transitioning {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 12px;
+    opacity: 0.5;
+}
+
+.userName {
+    margin-left: auto;
+    color: #00d2ff;
+    font-size: 16px;
+    font-weight: 500;
+}
