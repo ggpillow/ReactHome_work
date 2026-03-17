@@ -38,7 +38,6 @@ function ProfilePage() {
     <Box sx={{ pt: "64px", minHeight: "100vh" }}>
       <Container maxWidth="sm" sx={{ py: { xs: 3, md: 5 } }}>
         <div className={styles.fadeIn}>
-          {/* Аватар */}
           <Box sx={{ display: "flex", justifyContent: "center", mb: 3 }}>
             <Avatar
               sx={{
@@ -53,7 +52,6 @@ function ProfilePage() {
             </Avatar>
           </Box>
 
-          {/* Заголовок */}
           <Typography
             variant="h4"
             sx={{
@@ -70,7 +68,7 @@ function ProfilePage() {
             Профиль
           </Typography>
 
-          {/* Приветствие */}
+        
           {name && (
             <Paper
               className={styles.slideIn}
@@ -94,7 +92,7 @@ function ProfilePage() {
             </Paper>
           )}
 
-          {/* Форма */}
+          
           <Paper
             sx={{
               p: { xs: 3, md: 4 },

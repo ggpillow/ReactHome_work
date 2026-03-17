@@ -63,7 +63,7 @@ const HomePage = () => {
 
   return (
     <Box sx={{ paddingTop: "64px" }}>
-      {/* ===== БАННЕР ===== */}
+      
       <Box className={styles.banner}>
         <div className={styles.bannerOverlay} />
         <Box className={styles.bannerContent}>
@@ -123,7 +123,7 @@ const HomePage = () => {
         </Box>
       </Box>
 
-      {/* ===== КАТАЛОГ ===== */}
+      
       <Container id="catalog" maxWidth="lg" sx={{ py: { xs: 3, md: 5 } }}>
         <Typography
           variant="h4"

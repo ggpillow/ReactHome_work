@@ -54,7 +54,7 @@ function FilmCard({ film }) {
           }}
         />
 
-        {/* Рейтинг */}
+        
         <Box
           sx={{
             position: "absolute",
@@ -75,7 +75,7 @@ function FilmCard({ film }) {
           </Typography>
         </Box>
 
-        {/* Кнопка избранного */}
+        
         <IconButton
           onClick={(e) => {
             e.stopPropagation();

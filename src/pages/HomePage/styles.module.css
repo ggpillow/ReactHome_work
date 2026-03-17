@@ -29,7 +29,6 @@
   animation: fadeInUp 1s ease forwards;
 }
 
-/* ===== АНИМАЦИИ ===== */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -41,7 +40,6 @@
   }
 }
 
-/* ===== АДАПТИВ ===== */
 @media (max-width: 600px) {
   .banner {
     min-height: 60vh;
