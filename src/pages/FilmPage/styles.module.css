@@ -1,0 +1,34 @@
+.filmBanner {
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.filmBannerBg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  filter: blur(20px);
+  transform: scale(1.1);
+}
+
+.filmBannerOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(11, 11, 26, 0.9) 0%,
+    rgba(26, 26, 62, 0.85) 50%,
+    rgba(11, 11, 26, 1) 100%
+  );
+}
+
+@media (max-width: 600px) {
+  .filmBanner {
+    min-height: auto;
+    padding: 20px 0;
+  }
+}

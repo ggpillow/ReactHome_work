@@ -1,1 +1,1 @@
-export { default } from "./KinopoiskList"
+export { default } from "./KinopoiskList";

@@ -1,49 +1,25 @@
-import { useDispatch, useSelector } from "react-redux"
-import { toggleFavorite } from "../../store/favoritesSlice"
-import styles from "./styles.module.css"
+import FilmCard from "../FilmCard";
+import { Box } from "@mui/material";
 
-function KinopoiskList({ films, onFilmClick }) {
-    const dispatch = useDispatch()
-    const favorites = useSelector(state => state.favorites.films)
-
-    return (
-        <div className={styles.filmList}>
-            {films.map(film => {
-                const isFav = favorites.some(f => f.filmId === film.filmId)
-
-                return (
-                    <div
-                        key={film.filmId}
-                        className={styles.film}
-                        onClick={() => onFilmClick(film)}
-                    >
-                        <div className={styles.poster}>
-                            <img src={film.posterUrlPreview} alt={film.nameRu} />
-                            <span className={styles.ratingBadge}>
-                                ⭐ {film.rating}
-                            </span>
-                            <button
-                                className={styles.favButton}
-                                onClick={(e) => {
-                                    e.stopPropagation()
-                                    dispatch(toggleFavorite(film))
-                                }}
-                            >
-                                {isFav ? "❤️" : "🤍"}
-                            </button>
-                        </div>
-                        <div className={styles.info}>
-                            <h3>{film.nameRu}</h3>
-                            <p className={styles.genres}>
-                                {film.genres?.map(g => g.genre).join(", ")}
-                            </p>
-                            <p className={styles.year}>{film.year}</p>
-                        </div>
-                    </div>
-                )
-            })}
-        </div>
-    )
+function KinopoiskList({ films }) {
+  return (
+    <Box
+      sx={{
+        display: "grid",
+        gridTemplateColumns: {
+          xs: "repeat(1, 1fr)",
+          sm: "repeat(2, 1fr)",
+          md: "repeat(3, 1fr)",
+          lg: "repeat(4, 1fr)",
+        },
+        gap: 3,
+      }}
+    >
+      {films.map((film) => (
+        <FilmCard key={film.filmId} film={film} />
+      ))}
+    </Box>
+  );
 }
 
-export default KinopoiskList
+export default KinopoiskList;

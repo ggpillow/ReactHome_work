@@ -1,63 +1,29 @@
-.page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 60px 20px;
+.fadeIn {
+  animation: fadeIn 0.6s ease forwards;
 }
 
-.title {
-    font-size: 32px;
-    color: #ffffff;
-    margin-bottom: 20px;
+.slideIn {
+  animation: slideIn 0.4s ease forwards;
 }
 
-.current {
-    font-size: 20px;
-    color: rgba(255, 255, 255, 0.7);
-    margin-bottom: 30px;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.current span {
-    background: linear-gradient(135deg, #7b2ff7, #00d2ff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: bold;
-}
-
-.form {
-    display: flex;
-    gap: 12px;
-}
-
-.input {
-    padding: 12px 20px;
-    font-size: 16px;
-    border: 2px solid rgba(123, 47, 247, 0.3);
-    border-radius: 12px;
-    background: rgba(255, 255, 255, 0.05);
-    color: #ffffff;
-    outline: none;
-    width: 300px;
-    transition: border-color 0.3s;
-}
-
-.input:focus {
-    border-color: #7b2ff7;
-}
-
-.button {
-    padding: 12px 24px;
-    font-size: 16px;
-    border: none;
-    border-radius: 12px;
-    background: linear-gradient(135deg, #7b2ff7, #00d2ff);
-    color: #ffffff;
-    font-weight: 600;
-    cursor: pointer;
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.button:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(123, 47, 247, 0.4);
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
