@@ -8,7 +8,7 @@ import NotFoundPage from "../../pages/NotFoundPage";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/ReactHome_work/">
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
