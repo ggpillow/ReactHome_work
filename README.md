@@ -1,16 +1,61 @@
-# React + Vite
+# FunnyFilm 🎬
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Single Page приложение на React + Vite.**  
+Выбирайте лучшие фильмы со всего мира — ищите, фильтруйте, сохраняйте в избранное и делитесь с друзьями!
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Демо проекта
 
-## React Compiler
+▶️ [Открыть сайт на GitHub Pages](https://ggpillow.github.io/ReactHome_work/)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📝 Репозиторий
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+[https://github.com/ggpillow/ReactHome_work](https://github.com/ggpillow/ReactHome_work)
+
+---
+
+## 🔗 Используемое API
+
+Данные о фильмах получаются с помощью [Kinopoisk API Unofficial](https://kinopoiskapiunofficial.tech/):
+https://kinopoiskapiunofficial.tech/api/v2.2/films/top
+
+- Для доступа используется публичный API KEY:
+X-API-KEY: f098ba98-fa56-41ba-90d9-1443d803c903
+
+---
+
+## 🛠 Технологии
+
+- **React 18** + **Vite**
+- **React Router**
+- **Material UI (MUI)**
+- Работа с внешним REST API (fetch)
+---
+
+## 📖 Основные возможности
+
+- 🔍 Поиск фильмов
+- 🎭 Фильтрация по жанрам
+- ⭐️ Сохранение фильмов в “Избранное”
+- 🗂 Просмотр топа фильмов
+- 📱 Адаптивный интерфейс
+
+---
+
+## 🚩 Как запустить локально
+
+1. Клонировать репозиторий:
+git clone https://github.com/ggpillow/ReactHome_work.git
+2. Установить зависимости:
+npm install
+3. Запустить приложение:
+npm run dev
+
+---
+
+## 👩‍💻 Автор
+Anna Pillow
+---

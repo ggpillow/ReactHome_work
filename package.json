@@ -6,7 +6,7 @@
   "homepage": "https://ggpillow.github.io/ReactHome_work/",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && copy dist\\index.html dist\\404.html",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
@@ -15,7 +15,7 @@
     "format": "prettier --write \"src/**/*.{js,jsx,css,md}\"",
     "format:check": "prettier --check \"src/**/*.{js,jsx,css,md}\"",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+     "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
