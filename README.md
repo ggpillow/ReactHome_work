@@ -1,61 +1,57 @@
 # FunnyFilm 🎬
 
-**Single Page приложение на React + Vite.**  
-Выбирайте лучшие фильмы со всего мира — ищите, фильтруйте, сохраняйте в избранное и делитесь с друзьями!
+**A Single Page Application built with React + Vite.**
+Discover the best movies from around the world — search, filter by genre, save favorites, and share with friends!
 
 ---
 
-## 🚀 Демо проекта
+## 🚀 Live Demo
 
-▶️ [Открыть сайт на GitHub Pages](https://ggpillow.github.io/ReactHome_work/)
-
----
-
-## 📝 Репозиторий
-
-[https://github.com/ggpillow/ReactHome_work](https://github.com/ggpillow/ReactHome_work)
+▶️ [Open on GitHub Pages](https://ggpillow.github.io/ReactHome_work/)
 
 ---
 
-## 🔗 Используемое API
-
-Данные о фильмах получаются с помощью [Kinopoisk API Unofficial](https://kinopoiskapiunofficial.tech/):
-https://kinopoiskapiunofficial.tech/api/v2.2/films/top
-
-- Для доступа используется публичный API KEY:
-X-API-KEY: f098ba98-fa56-41ba-90d9-1443d803c903
-
----
-
-## 🛠 Технологии
+## 🛠 Tech Stack
 
 - **React 18** + **Vite**
 - **React Router**
 - **Material UI (MUI)**
-- Работа с внешним REST API (fetch)
----
-
-## 📖 Основные возможности
-
-- 🔍 Поиск фильмов
-- 🎭 Фильтрация по жанрам
-- ⭐️ Сохранение фильмов в “Избранное”
-- 🗂 Просмотр топа фильмов
-- 📱 Адаптивный интерфейс
+- REST API integration (fetch)
 
 ---
 
-## 🚩 Как запустить локально
+## 📖 Features
 
-1. Клонировать репозиторий:
-git clone https://github.com/ggpillow/ReactHome_work.git
-2. Установить зависимости:
-npm install
-3. Запустить приложение:
-npm run dev
+- 🔍 Movie search
+- 🎭 Filter by genre
+- ⭐️ Save movies to Favorites
+- 🗂 Browse top-rated movies
+- 📱 Responsive design
 
 ---
 
-## 👩‍💻 Автор
+## 🔗 API
+
+Movie data is provided by the [Kinopoisk API Unofficial](https://kinopoiskapiunofficial.tech/).
+
+> ⚠️ You need your own API key. Get it at [kinopoiskapiunofficial.tech](https://kinopoiskapiunofficial.tech/),
+> then add it to a `.env` file (see `.env.example`).
+
+---
+
+## 🚩 Getting Started
+
+1. Clone the repository:
+   `git clone https://github.com/ggpillow/ReactHome_work.git`
+
+2. Install dependencies:
+ ` npm install`
+
+3. Create a .env file and add your API key:
+`VITE_API_KEY=your_api_key_here`
+
+4. Run the app:
+`npm run dev`
+
+## 👩‍💻 Author
 Anna Pillow
----
