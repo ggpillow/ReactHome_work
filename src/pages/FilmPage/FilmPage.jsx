@@ -18,7 +18,7 @@ import StarIcon from "@mui/icons-material/Star";
 import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
 import styles from "./styles.module.css";
 
-const API_KEY = "f098ba98-fa56-41ba-90d9-1443d803c903";
+const API_KEY = import.meta.env.VITE_API_KEY;
 
 const FilmPage = () => {
   const { id } = useParams();
