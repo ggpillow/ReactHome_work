@@ -39,6 +39,18 @@ Movie data is provided by the [Kinopoisk API Unofficial](https://kinopoiskapiuno
 
 ---
 
+## 🔐 A Note on Security
+
+This is a frontend-only demo hosted on GitHub Pages.
+
+The API key is stored in environment variables (`.env`) and is **not committed** to the repository (see `.gitignore`).
+
+⚠️ Since this is a static frontend, the key is still bundled into the client build and technically visible in the browser DevTools. In a production setup, API requests should be proxied through a **backend server** to keep the key private.
+
+The Kinopoisk Unofficial API key is free and rate-limited, so this approach is acceptable for a demo project.
+
+---
+
 ## 🚩 Getting Started
 
 1. Clone the repository:
